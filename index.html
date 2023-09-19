@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <input type="text" name="Screen" id="Screen" disabled>
+        <table>
+            <tr>
+                <td><button onclick="bracketopen()">(</button></td>
+                <td><button onclick="bracketclose()">)</button></td>
+                <td><button onclick="clr()">Clr</button></td>
+                <td><button onclick="del()">Del</button></td>
+                <td><button onclick="onoff()" id="onOff">On/Off</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="set7()">7</button></td>
+                <td><button onclick="set8()">8</button></td>
+                <td><button onclick="set9()">9</button></td>
+                <td><button onclick="Divide()">/</button></td>
+                <td><button onclick="sqrt()">sqrt</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="set4()">4</button></td>
+                <td><button onclick="set5()">5</button></td>
+                <td><button onclick="set6()">6</button></td>
+                <td><button onclick="multiply()">*</button></td>
+                <td><button onclick="percentage()">%</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="set1()">1</button></td>
+                <td><button onclick="set2()">2</button></td>
+                <td><button onclick="set3()">3</button></td>
+                <td><button onclick="add()">+</button></td>
+                <td><button onclick="subtract()">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="zero()">0</button></td>
+                <td><button onclick="doublezero()">00</button></td>
+                <td><button onclick="point()">.</button></td>
+                <td colspan="2"><button onclick="equal()" id="equalto" >=</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="calcu.js"></script>
+</html>
